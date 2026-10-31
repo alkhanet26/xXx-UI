@@ -174,7 +174,7 @@ acme_standalone(){
         fi
     fi
     
-    bash ~/.acme.sh/acme.sh --install-cert -d ${domain} --key-file /root/private.key --fullchain-file /root/cert.crt --ecc
+    bash ~/.acme.sh/acme.sh --install-cert -d ${domain} --key-file /etc/xray/xray.key --fullchain-file /etc/xray/xray.crt --ecc
     checktls
 }
 
