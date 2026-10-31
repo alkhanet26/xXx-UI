@@ -199,7 +199,7 @@ acme_cfapiTLD(){
         bash ~/.acme.sh/acme.sh --issue --dns dns_cf -d "${domain}" -k ec-256 --insecure
     fi
     #bash ~/.acme.sh/acme.sh --install-cert -d "${domain}" --key-file /root/private.key --fullchain-file /root/cert.crt --ecc
-    bash ~/.acme.sh/acme.sh --install-cert -d "${domain}" --key-file /var/lib/marzban/xray.key --fullchain-file /var/lib/marzban/xray.crt --ecc
+    bash ~/.acme.sh/acme.sh --install-cert -d "${domain}" --key-file /etc/xray/xray.key --fullchain-file /etc/xray/xray.crt --ecc
     checktls
 }
 
